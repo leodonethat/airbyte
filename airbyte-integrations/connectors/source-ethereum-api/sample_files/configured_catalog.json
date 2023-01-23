@@ -1,0 +1,30 @@
+{
+  "streams": [
+    {
+      "stream": {
+        "name": "ethereum_blocks",
+        "json_schema": {
+          "$schema": "http://json-schema.org/draft-04/schema#",
+          "type": "object",
+          "properties": {
+            "url_address": {
+              "type": "string"
+            },
+            "url_port": {
+              "type": "string"
+            },
+            "start_block": {
+              "type": "string"
+            },
+            "end_block": {
+              "type": "string"
+            }
+          }
+        },
+        "supported_sync_modes": ["full_refresh", "incremental"]
+      },
+      "sync_mode": "incremental",
+      "destination_sync_mode": "overwrite"
+    }
+  ]
+}
